@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Steelblade\Discriminator\tests;
 
-use Steelblade\Discriminator\Discriminator;
+use Steelblade\Discriminator;
 
 
 final class DiscriminatorTest extends \PHPUnit\Framework\TestCase {
