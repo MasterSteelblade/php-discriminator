@@ -7,7 +7,7 @@ namespace Steelblade\Discriminator\Tests;
 use Steelblade\Discriminator\Discriminator;
 
 
-final class DiscriminatorTest extends PHPUnit\Framework\TestCase {
+final class DiscriminatorTest extends \PHPUnit\Framework\TestCase {
     public function testZeroDiscriminator() {
         $result = Discriminator::format(0);
         $this->assertEquals('0000', $result, 'Discriminator format function failed on 0!');
