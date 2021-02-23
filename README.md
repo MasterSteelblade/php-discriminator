@@ -1,5 +1,4 @@
-# php-discriminator
-
+# Discriminator
 
 
 Branch | GitHub Actions | Coverage |

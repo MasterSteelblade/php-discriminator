@@ -25,11 +25,6 @@
     "config": {
         "sort-packages": true
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "dev"
-        }
-    },
     "autoload": {
         "psr-4": {
             "Steelblade\\Discriminator\\": "src/"
