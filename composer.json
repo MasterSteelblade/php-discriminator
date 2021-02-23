@@ -1,0 +1,46 @@
+{
+    "name": "mastersteelblade/discriminator",
+    "type": "library",
+    "description": "A simple package to handle basic discriminator manipulation for user management.",
+    "keywords": [
+        "user management",
+        "users",
+        "identity",
+        "user identity",
+        "discriminator",
+        "discriminators"
+    ],
+    "homepage": "https://github.com/MasterSteelblade/php-discriminator",
+    "license": "MIT", 
+    "authors": [
+        {
+            "name": "Benjamin Clarke",
+            "email": "mastersteelblade@protonmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Steelblade\\Discriminator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Steelblade\\Discriminator\\tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.5"
+    }
+}
