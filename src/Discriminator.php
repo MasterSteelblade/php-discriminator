@@ -69,6 +69,10 @@ namespace Steelblade\Discriminator;
              return random_int(0, 9999);
          }
 
+         public function get() {
+             return $this->discriminator;
+         }
+
         /** 
          * Magic method, returns a representation of the discriminator when used in a string.
          */
