@@ -1,6 +1,6 @@
 <?php 
 
-namespace Steelblade;
+namespace Steelblade\Discriminator;
 
 /**
  * This is a very simple class designed to make things like
