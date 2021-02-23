@@ -37,7 +37,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Steelblade\\Discriminator\\Tests\\": "tests/"
+            "Steelblade\\Discriminator\\tests\\": "tests/"
         }
     },
     "require-dev": {

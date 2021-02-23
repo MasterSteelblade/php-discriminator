@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Steelblade\Discriminator\Tests;
+namespace Steelblade\Discriminator\tests;
 
 use Steelblade\Discriminator\Discriminator;
 
