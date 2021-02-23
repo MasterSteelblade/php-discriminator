@@ -47,5 +47,10 @@ final class DiscriminatorTest extends \PHPUnit\Framework\TestCase {
         $disc = Discriminator::format(1212);
         $this->assertEquals('1212', strval($disc), 'Formatting correct discriminator failed.');
     }
+
+    public function testGenerate() {
+        $disc = Discriminator::generate();
+        $this->assertIsInt($disc);
+    }
 }
 
