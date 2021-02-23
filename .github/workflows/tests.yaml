@@ -8,7 +8,8 @@ on:
   pull_request:
 
 jobs:
-  run:
+  test:
+    name: PHP ${{ matrix.php-version }} + ${{ matrix.operating-system }}
     runs-on: ${{ matrix.operating-system }}
     strategy:
       matrix:
