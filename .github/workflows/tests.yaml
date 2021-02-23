@@ -12,8 +12,8 @@ jobs:
     runs-on: ${{ matrix.operating-system }}
     strategy:
       matrix:
-        operating-system: ['ubuntu-latest', 'ubuntu-20.04', 'ubuntu-18.04']
-        php-versions: ['7.3', '7.4', '8.0']
+        operating-system: ['ubuntu-20.04', 'ubuntu-18.04']
+        php-versions: [7.4', '8.0']
         phpunit-versions: ['9.5']
     steps:
     - name: Checkout
