@@ -6,6 +6,8 @@ on:
       - main
       - dev
   pull_request:
+    branches:
+      - main
 
 jobs:
   test:
@@ -26,7 +28,7 @@ jobs:
         php-version: ${{ matrix.php-versions }}
         coverage: pcov
         extensions: mbstring     
-        tools: composer:v2, phpunit:9.5
+        tools: composer:v2, phpunit:9.5, phpstan
     
     - name: Install Composer Dependencies
       run: composer install
@@ -38,3 +40,6 @@ jobs:
       uses: codecov/codecov-action@v1
       with:
         file: build/logs/clover.xml
+
+    - name: Run PHPStan 
+      run: phpstan analyse -l 8 src

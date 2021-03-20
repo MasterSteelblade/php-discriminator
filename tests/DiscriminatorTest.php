@@ -52,5 +52,10 @@ final class DiscriminatorTest extends \PHPUnit\Framework\TestCase {
         $disc = Discriminator::generate();
         $this->assertIsInt($disc);
     }
+
+    public function testGetting() {
+        $disc = new Discriminator();
+        $this->assertIsInt($disc->get());
+    }
 }
 
