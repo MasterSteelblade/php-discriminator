@@ -30,6 +30,8 @@ namespace Steelblade\Discriminator;
                 $number = Discriminator::generate();
             } elseif (is_numeric($input)) {
                 $number = intval($input);
+            } else {
+                $number = Discriminator::generate();
             }
             $string = strval(abs($number));
             if (strlen($string) > 4) {
