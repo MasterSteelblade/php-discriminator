@@ -42,4 +42,4 @@ jobs:
         file: build/logs/clover.xml
 
     - name: Run PHPStan 
-      run: phpstan analyse -l 8 src tests
+      run: phpstan analyse -l 8 src

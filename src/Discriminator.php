@@ -23,7 +23,7 @@ namespace Steelblade\Discriminator;
         /** 
          * Constructs an instance of the Discriminator class.
          * 
-         * @param int|null   $number     The discriminator desired. If left as null, one will be generated. 
+         * @param int|null   $input     The discriminator desired. If left as null, one will be generated. 
         */
         public function __construct(?int $input = 0) {
             if ($input === null) {
