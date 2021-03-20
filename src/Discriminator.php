@@ -25,9 +25,11 @@ namespace Steelblade\Discriminator;
          * 
          * @param int|null   $number     The discriminator desired. If left as null, one will be generated. 
         */
-        public function __construct(?int $number = 0) {
-            if ($number === null) {
-                $this->discriminator = Discriminator::generate();
+        public function __construct(?int $input = 0) {
+            if ($input === null) {
+                $number = Discriminator::generate();
+            } elseif (is_numeric($input)) {
+                $number = intval($input);
             }
             $string = strval(abs($number));
             if (strlen($string) > 4) {
@@ -49,7 +51,7 @@ namespace Steelblade\Discriminator;
          * 
          * @param mixed     $discriminator      The discriminator to format as a string.
          */
-        public static function format($discriminator) {
+        public static function format($discriminator):string {
             $string = strval(intval($discriminator));
             if (strlen($string) > 4) {
                 return '9999';
@@ -65,11 +67,11 @@ namespace Steelblade\Discriminator;
          * Generates a discriminator. 
          */
 
-         public static function generate() {
+         public static function generate():int {
              return random_int(0, 9999);
          }
 
-         public function get() {
+         public function get():int {
              return $this->discriminator;
          }
 
